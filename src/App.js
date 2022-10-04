@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './components/Home';
+import Banner from './components/Landing';
 import CreateEvent from './components/CreateEvent';
 import DisplayEvent from './components/DisplayEvent';
 
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
 
 <Routes>
-    <Route exact path='/' element={<Home />}>
+    <Route exact path='/' element={<Banner />}>
        
     </Route > 
     <Route path = '/create' element = {<CreateEvent />}>
@@ -27,6 +27,8 @@ function App() {
 
 
 </BrowserRouter>
+
+
 
     </div>
   );
