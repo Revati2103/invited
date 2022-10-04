@@ -33,9 +33,10 @@ function Banner() {
         <div className="aside">
             <h1>Imagine if <br/><span ref={el}></span><br/>had events</h1>
             <p>Easily host and share events with your friends across any social media.</p>
-        </div>
+        
 
         <button className='create-btn' onClick={()=>navigate("/create")}><a href="/create">🎉 Create my event</a></button>
+        </div>
     </div>
 
    

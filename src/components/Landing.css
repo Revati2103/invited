@@ -76,7 +76,7 @@ background-clip: text;
     flex-direction: "column";
     justify-content: "space-evenly";
 padding: 0px;
-gap: 16px;
+gap: 14px;
 position: absolute;
 width: 321px;
 height: 160px;
@@ -114,6 +114,7 @@ color: #240D57;
     line-height: 28px;
     text-align: right;
     color: #4F4F4F;
+    margin: 314px 60px 82px 231px;
     
     
 
