@@ -74,11 +74,11 @@ p span{
     background: linear-gradient(95deg, #8361ff, #e87bf8);
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
-   
+    margin-bottom: 45px;
+    color: white;
+    text-decoration: none;
+
 }
 
-.submit-btn a{
-    color: white;
-}
+
 

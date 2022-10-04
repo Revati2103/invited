@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import './CreateEvent.css'
 import {useNavigate} from "react-router-dom"
+import {Link} from 'react-router-dom'
 
 
 
@@ -17,7 +18,16 @@ function CreateEvent() {
       location: "",
       imagePath: ""
   })
-
+  // const event = {
+  //   id: Math.floor(Math.random() * 10000),
+  //   title: events.title,
+  //   host: events.host,
+  //   startDate: events.startDate,
+  //   endDate: events.endDate,
+  //   location: events.location,
+  //   imagePath: events.imagePath
+  
+  // }
   let name;
   let value;
 
@@ -38,17 +48,7 @@ function CreateEvent() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // const event = {
-    //   id: Math.floor(Math.random() * 10000),
-    //   title: title,
-    //   startDate: startDate,
-    //   endDate: endDate,
-    //   location: location,
-    //   url: url,
-    //   description: description,
-    //   imagePath: imagePath
-
-    // }
+    
     navigate('/display');
    
     resetForm();
@@ -117,8 +117,12 @@ function CreateEvent() {
            value = {events.imagePath || ''}
           />
           </label>
-      <button className="submit-btn">Create your event</button>
-       {/* <button className='submit-btn' onClick={() => navigate("/display")}>Create your event</button> */}
+      <Link className="submit-btn" 
+      
+      to = {{
+        pathname: "/display",
+      }}
+      >Create your event</Link>
       </form>
     </div>
   

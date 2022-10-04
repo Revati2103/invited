@@ -72,10 +72,9 @@ background-clip: text;
 }
 
 .aside{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "space-evenly";
 padding: 0px;
 gap: 16px;
 position: absolute;
